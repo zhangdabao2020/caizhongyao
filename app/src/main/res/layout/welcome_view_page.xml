@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/viewpager"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    />    
+    
+    
+    <LinearLayout 
+        android:id="@+id/ll" 
+    	android:orientation="horizontal" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginBottom="24.0dip" 
+    	android:layout_alignParentBottom="true" 
+    	android:layout_centerHorizontal="true">
+    	
+    	<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/welcome_dot_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/welcome_dot_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/welcome_dot_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/welcome_dot_icon" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/begin_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/begin_game_icon"
+        android:visibility="invisible" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/starttext1"
+		android:layout_marginTop="40dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:textSize="30dp"
+		android:text="app Name 《猜中药》"
+		android:textColor="@color/darkorange"
+		android:visibility="visible" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/starttext2"
+		android:layout_marginTop="40dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:textSize="30dp"
+		android:text="设计：191132张犁宝"
+		android:textColor="@color/darkorange"
+		android:visibility="invisible" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/starttext3"
+		android:layout_marginTop="40dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:textSize="30dp"
+		android:text="指导老师：姜鑫维"
+		android:textColor="@color/darkorange"
+		android:visibility="invisible" />
+
+</RelativeLayout>

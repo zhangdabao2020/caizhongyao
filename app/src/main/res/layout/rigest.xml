@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/all_bg"
+    android:id="@+id/rigest"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="欢迎进入注册界面!"
+        android:textSize="30dp"
+        android:textColor="@color/goldenrod"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="用户名："
+                android:textColor="@color/goldenrod"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/usernameRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入用户名！！！" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="密码："
+                android:textColor="@color/goldenrod"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/passwordRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码！！！" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="年龄："
+                android:textColor="@color/goldenrod"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ageRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入年龄！！！" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="性别："
+                android:textColor="@color/goldenrod"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/sexRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/woman"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/nan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男" />
+
+                <RadioButton
+                    android:id="@id/woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <LinearLayout>
+
+                <Button
+                    android:id="@+id/Register"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="注册"
+                    android:textColor="@color/goldenrod"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

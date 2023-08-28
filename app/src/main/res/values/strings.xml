@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">猜药名</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="pass_succeed">恭喜过关!</string>
+    <string name="more_message">更多题目相关信息</string>
+    
+    <integer name="pay_tip_answer">9</integer>
+    <integer name="pay_delete_words">3</integer>
+
+</resources>

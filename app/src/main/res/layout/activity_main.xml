@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    tools:context="zhanglibao.com.example.wangsz.MainActivity" >
+
+    <!-- Frame1 游戏主界面 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- TitleBar -->
+
+        <include layout="@layout/title_bar" />
+
+        <include
+            layout="@layout/topic_part" />
+
+        <include
+            layout="@layout/name_select" />
+    </LinearLayout>
+
+    <!-- 提示界面 -->
+
+    <!-- 答案正确过关界面 -->
+
+    <include layout="@layout/answer_right" />
+
+    <include layout="@layout/float_buttons" />
+    <include layout="@layout/find_more_message" />
+
+</FrameLayout>

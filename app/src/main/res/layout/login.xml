@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/log_in"
+    android:background="@drawable/all_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/goldenrod"
+        android:text="欢迎进入登录界面!"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="用户名："
+                android:textColor="@color/goldenrod"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入用户名！！！" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="密码："
+                android:textColor="@color/goldenrod"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码！！！" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <LinearLayout>
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="登录"
+                    android:textColor="@color/goldenrod"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="注册"
+                    android:textColor="@color/goldenrod"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
